@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="canonical" href="https://letswrite.tw/custom-google-form/">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" .css" type="text/css" />
+    <title>線上問卷</title>
+    <script>
+        function showWord(word, yin, diao) {
+            document.write('<div class="word ">' + word + '</div><div class="yin">' + yin +
+                '</div><div class="diao mr-1">' +
+                diao + '</div>');
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div id="question-0" class="problem d-flex  position-relative">
+                <fieldset class="form-group">
+                    <legend class="col-form-label">
+                        <div class="d-flex align-items-center title">
+                            <script>
+                                showWord('性', 'ㄒㄧㄥ', 'ˋ')
+                                showWord('別', 'ㄅㄧㄝ', 'ˊ')
+                            </script>
+                            :
+                        </div>
+                    </legend>
+                    <div class="form-check ">
+                        <input type="radio" name="sex" id="boy" value="男性" onchange="changePage(1)" required>
+                        <label class="form-check-label ml-1" for="boy">
+                            <div class="d-flex align-items-center ">
+                                <script>
+                                    showWord('男', 'ㄋㄢ', 'ˊ')
+                                    showWord('生', 'ㄕㄥ', '')
+                                </script>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input type="radio" name="sex" id="girl" value="女性" onchange="changePage(1)" required>
+                        <label class="form-check-label ml-1" for="girl">
+                            <div class="d-flex align-items-center">
+                                <script>
+                                    showWord('女', 'ㄋㄩ', 'ˇ')
+                                    showWord('生', 'ㄕㄥ', '')
+                                </script>
+                            </div>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div id="question-1" class="problem d-flex align-items-center position-relative">
+                <fieldset class="form-group">
+                    <legend class="col-form-label">
+                        <div class="d-flex align-items-center title">
+                            <script>
+                                showWord('年', 'ㄋㄧㄢ', 'ˊ')
+                                showWord('齡', 'ㄌㄧㄥ', 'ˊ')
+                            </script>
+                            :
+                        </div>
+                    </legend>
+                    <div class="form-check">
+                        <input type="radio" name="year" id="year1" value="3~6歲" onchange="changePage(2)" required>
+                        <label class="form-check-label ml-1" for="year1">
+                            <div class="d-flex align-items-center ">
+                                3~6
+                                <script>
+                                    showWord('歲', 'ㄙㄨㄟ', 'ˋ')
+                                </script>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="year" id="year2" value="6~10歲" onchange="changePage(2)" required>
+                        <label class="form-check-label ml-1" for="year2">
+                            <div class="d-flex align-items-center">
+                                6~10
+                                <script>
+                                    showWord('歲', 'ㄙㄨㄟ', 'ˋ')
+                                </script>
+                            </div>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div id="question-2" class="problem d-flex align-items-center position-relative">
+                <fieldset class="form-group">
+                    <legend class="col-form-label">
+                        <div class="d-flex align-items-center title">
+                            <script>
+                                showWord('問', 'ㄋㄧㄢ', 'ˊ')
+                                showWord('提3', 'ㄌㄧㄥ', 'ˊ')
+                            </script>
+                            :
+                        </div>
+                    </legend>
+                    <div class="form-check">
+                        <input type="radio" value="3~6歲" onchange="changePage(3)" required>
+                        <label class="form-check-label ml-1">
+                            <div class="d-flex align-items-center ">
+                                3~6
+                                <script>
+                                    showWord('歲', 'ㄙㄨㄟ', 'ˋ')
+                                </script>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" value="6~10歲" onchange="changePage(3)" required>
+                        <label class="form-check-label ml-1">
+                            <div class="d-flex align-items-center">
+                                6~10
+                                <script>
+                                    showWord('歲', 'ㄙㄨㄟ', 'ˋ')
+                                </script>
+                            </div>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div id="question-3" class="problem d-flex align-items-center position-relative">
+                <fieldset class="form-group">
+                    <legend class="col-form-label">
+                        <div class="d-flex align-items-center title">
+                            <script>
+                                showWord('問', 'ㄋㄧㄢ', 'ˊ')
+                                showWord('提4', 'ㄌㄧㄥ', 'ˊ')
+                            </script>
+                            :
+                        </div>
+                    </legend>
+                    <div class="form-check">
+                        <input type="radio" value="3~6歲" onchange="changePage(4)" required>
+                        <label class="form-check-label ml-1">
+                            <div class="d-flex align-items-center ">
+                                3~6
+                                <script>
+                                    showWord('歲', 'ㄙㄨㄟ', 'ˋ')
+                                </script>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" value="6~10歲" onchange="changePage(4)" required>
+                        <label class="form-check-label ml-1">
+                            <div class="d-flex align-items-center">
+                                6~10
+                                <script>
+                                    showWord('歲', 'ㄙㄨㄟ', 'ˋ')
+                                </script>
+                            </div>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div id="question-4" class="problem d-flex align-items-center position-relative">
+                <fieldset class="form-group">
+                    <legend class="col-form-label">
+                        <div class="d-flex align-items-center title">
+                            <script>
+                                showWord('問', 'ㄋㄧㄢ', 'ˊ')
+                                showWord('提5', 'ㄌㄧㄥ', 'ˊ')
+                            </script>
+                            :
+                        </div>
+                    </legend>
+                    <div class="form-check">
+                        <input type="radio" value="3~6歲" onchange="changePage(5)" required>
+                        <label class="form-check-label ml-1">
+                            <div class="d-flex align-items-center ">
+                                3~6
+                                <script>
+                                    showWord('歲', 'ㄙㄨㄟ', 'ˋ')
+                                </script>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" value="6~10歲" onchange="changePage(5)" required>
+                        <label class="form-check-label ml-1">
+                            <div class="d-flex align-items-center">
+                                6~10
+                                <script>
+                                    showWord('歲', 'ㄙㄨㄟ', 'ˋ')
+                                </script>
+                            </div>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id="finished" class="problem d-flex align-items-center position-relative">
+                <button id="submit" type="submit" class="btn btn-primary col-sm-12 d-flex justify-content-center">
+                    <div class="d-flex align-items-center">
+                        <script>
+                            showWord('送', 'ㄙㄨㄥ', 'ˋ')
+                            showWord('出', 'ㄔㄨ', '')
+                        </script>
+                    </div>
+                </button>
+            </div>
+        </form>
+        <div id="compelete-bar" class="position-fixed p-3 d-flex align-items-center" style="bottom: 0;right:0">
+            <div class="progress w-100">
+                <div id="progressBar" class="progress-bar bg-info" role="progressbar" style="width: 0%"
+                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="btn-group ml-2" role="group" aria-label="Basic example">
+                <button id="button-up" type="button" class="btn btn-secondary"><i class="fas fa-angle-up"></i></button>
+                <button id="button-down" type="button" class="btn btn-secondary"><i
+                        class='fas fa-angle-down'></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="questionnaire.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+span {
+  font-family: PMingLiU;
+  font-size: 50px;
+}
+
+.index {
+  max-height: 100vh;
+  height: 100vh;
+
+}
+
+.word {
+  font-size: 18px;
+}
+
+.yin {
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+  white-space: nowrap;
+  font-size: 12px;
+  -webkit-transform: scale(.75);
+  letter-spacing: -1px;
+}
+
+.title,
+.title .word {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.title .diao {
+  font-size: 12px;
+}
+
+.problem {
+  height: 100vh;
+  padding: 15% 0;
+}
+
+.cls-1 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear 1 forwards;
+}
+
+.cls-2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear 1 forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#compelete-bar{
+  width: 50%;
+}
+@media screen and (max-width: 720px) {
+  #compelete-bar{
+    width: 100%;
+  }
+}
