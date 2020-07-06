@@ -13,28 +13,39 @@
     <title>線上問卷</title>
     <script>
         function showWord(word, yin, diao) {
-            document.write('<div class="word ">' + word + '</div><div class="yin">' + yin +
+            document.write('<div class="d-flex"><div class="word ">' + word + '</div><div class="yin">' + yin +
                 '</div><div class="diao mr-1">' +
-                diao + '</div>');
+                diao + '</div></div>');
         }
     </script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
-    <div class="container">1
+    <div class="container">
         <form>
             <div id="question-0" class="problem d-flex  position-relative">
                 <fieldset class="form-group">
-                    <legend class="col-form-label">
-                        <div class="d-flex align-items-center title">
-                            <script>
-                                showWord('性', 'ㄒㄧㄥ', 'ˋ')
-                                showWord('別', 'ㄅㄧㄝ', 'ˊ')
-                            </script>
-                            :
-                        </div>
-                    </legend>
+                    <div class="d-flex">
+                        <div style="padding: 7px 0;font-size: 20px;margin:0 4px;">1. </div>
+                        <legend class="col-form-label">
+                            <div class="d-flex align-items-center title flex-wrap">
+                                
+                                <script>
+                                    showWord('你', 'ㄋㄧ', 'ˇ')
+                                    showWord('是', 'ㄕ', 'ˋ')
+                                    showWord('男', 'ㄋㄢ', 'ˊ')
+                                    showWord('孩', 'ㄏㄞ', 'ˊ')
+                                    showWord('還', 'ㄏㄞ', 'ˊ')
+                                    showWord('是', 'ㄕ', 'ˋ')
+                                    showWord('女', 'ㄋㄩ', 'ˇ')
+                                    showWord('孩', 'ㄏㄞ', 'ˊ')
+                                    showWord('呢', 'ㄋㄜ', '˙')
+                                </script>
+                                ？
+                            </div>
+                        </legend>
+                    </div>
                     <div class="form-check ">
                         <input type="radio" name="sex" id="boy" value="男性" onchange="changePage(1)" required>
                         <label class="form-check-label ml-1" for="boy">
