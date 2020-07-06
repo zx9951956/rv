@@ -4,7 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport"
+        content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
     <link rel="canonical" href="https://letswrite.tw/custom-google-form/">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -13,23 +14,32 @@
     <title>線上問卷</title>
     <script>
         function showWord(word, yin, diao) {
-            document.write('<div class="word ">' + word + '</div><div class="yin">' + yin +
-                '</div><div class="diao mr-1">' +
-                diao + '</div>');
+            document.write('<div class="d-flex"><div class="word ">' + word + '</div><div class="yin d-flex justify-content-center" >' + yin +
+                '</div><div class="diao mr-1 d-flex align-items-center">' +
+                diao + '</div></div>');
         }
     </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
-    <div class="d-flex align-items-center index">
-        <div class="col-lg-12">
-        
-            <form action="questionnaire.html">
-                <button id="submit" type="submit" class="btn btn-primary col-sm-12 d-flex justify-content-center" >
-                    <span>開始填寫</span>
-                </button>
-            </form>
-        </div>
+    <div class="container">
+        <legend class="col-form-label">
+            <div class="d-flex align-items-center title flex-wrap">
+
+                <script>
+                    showWord('親', 'ㄑㄧㄣ', '')
+                    showWord('愛', 'ㄞ', 'ˋ')
+                    showWord('的', '˙ㄉㄜ', '')
+                    showWord('小', 'ㄒㄧㄠ', 'ˇ')
+                    showWord('朋', 'ㄆㄥ', 'ˊ')
+                    showWord('友', 'ㄧㄡ', 'ˇ')
+                    showWord('您', 'ㄋㄧ', 'ˊ')
+                    showWord('好', 'ㄏㄠ', 'ˇ')
+                </script>
+                :
+            </div>
+        </legend>
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -43,6 +53,9 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="questionnaire.js"></script>
+
 </body>
 
 </html>
