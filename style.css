@@ -1,6 +1,6 @@
 body {
-  overflow-y: hidden;
-  overflow-x: hidden;
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
 }
 
 span {
@@ -23,8 +23,9 @@ span {
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: vertical-lr;
   white-space: nowrap;
-  font-size: 10px;
-  -webkit-transform: scale(.75);
+  font-size: 12px;
+  -webkit-text-size-adjust:none;
+  -webkit-transform: scale(.5);
   letter-spacing: -1px;
 }
 
@@ -33,9 +34,23 @@ span {
   font-size: 16px;
   font-weight: 700;
 }
-
+.padding-5{
+  padding: 3rem;
+}
+@media screen and (max-width: 460px) {
+  .title,
+  .title .word {
+    font-size: 16px;
+    font-weight: 700;
+    -webkit-transform: scale(.9);
+  }
+  .padding-5{
+    padding: 0;
+  }
+}
 .title .diao {
-  font-size: 10px;
+  font-size: 12px;
+  -webkit-transform: scale(.75);
 }
 
 .problem {
