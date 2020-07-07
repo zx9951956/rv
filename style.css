@@ -1,10 +1,8 @@
 body {
   /* overflow-y: hidden;
   overflow-x: hidden; */
-  background: #4bcad3;
-  padding: 5% 0;
-  min-height: 100vh;
-  height:100vh
+  max-height: 100vh;
+  height: 100vh;
 }
 
 span {
@@ -12,11 +10,6 @@ span {
   font-size: 20px;
 }
 
-.content{
-  background: white;
-  border-radius: 10%;
-  height: 100%;
-}
 .index {
   max-height: 100vh;
   height: 100vh;
@@ -44,14 +37,14 @@ span {
   font-weight: 700;
 }
 .padding-5{
-  padding: 3rem;
+  padding: 0 3rem;
 }
 @media screen and (max-width: 460px) {
   .title,
   .title .word {
     font-size: 16px;
     font-weight: 700;
-    -webkit-transform: scale(.9);
+    -webkit-transform: scale(.8);
   }
   .padding-5{
     padding: 0;
