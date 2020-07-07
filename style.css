@@ -38,16 +38,6 @@ span {
   font-size: 10px;
 }
 
-@media screen and (max-width: 460px) {
-  .title,
-.title .word {
-  font-size: 14px;
-  font-weight: 700;
-}
-  .yin {
-    font-size: 6px;
-  }
-}
 .problem {
   height: 100vh;
   padding: 15% 0;
