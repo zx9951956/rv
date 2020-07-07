@@ -160,55 +160,94 @@
                 </div>
             </legend>
         </div>
-        <div class="mt-5">
+        <div class="col-lg-12 mt-5">
             <form>
-                <div id="question-0" class="problem d-flex  position-relative">
-                    <fieldset class="form-group">
-                        <div class="d-flex">
-                            <div style="padding: 7px 0;font-size: 20px;margin:0 4px;">1. </div>
-                            <legend class="col-form-label">
-                                <div class="d-flex align-items-center title flex-wrap">
-                                    
-                                    <script>
-                                        showWord('你', 'ㄋㄧ', 'ˇ')
-                                        showWord('是', 'ㄕ', 'ˋ')
-                                        showWord('男', 'ㄋㄢ', 'ˊ')
-                                        showWord('孩', 'ㄏㄞ', 'ˊ')
-                                        showWord('還', 'ㄏㄞ', 'ˊ')
-                                        showWord('是', 'ㄕ', 'ˋ')
-                                        showWord('女', 'ㄋㄩ', 'ˇ')
-                                        showWord('孩', 'ㄏㄞ', 'ˊ')
-                                        showWord('呢', 'ㄋㄜ', '˙')
-                                    </script>
-                                    ？
-                                </div>
-                            </legend>
-                        </div>
-                        <div class="form-check ">
-                            <input type="radio" name="sex" id="boy" value="男性" onchange="changePage(1)" required>
-                            <label class="form-check-label ml-1" for="boy">
-                                <div class="d-flex align-items-center ">
-                                    <script>
-                                        showWord('男', 'ㄋㄢ', 'ˊ')
-                                        showWord('生', 'ㄕㄥ', '')
-                                    </script>
-                                </div>
+                <div class="form-group d-flex">
+                    <label for="staticEmail" class="col-form-label d-flex">
+                        <legend class="col-form-label">
+                            <div class="d-flex align-items-center title flex-wrap">
+                                1.
+                                <script>
+                                    showWord('性', 'ㄒㄧㄥ', 'ˋ')
+                                    showWord('別', 'ㄅㄧㄝ', 'ˊ')
+                                </script>
+                                :
+                            </div>
+                        </legend>
+                    </label>
+                    <div class="col-sm-10 d-flex align-items-center">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sex" id="boy" value="男性" required>
+                            <label class="form-check-label" for="boy">
+                                <legend class="col-form-label">
+                                    <div class="d-flex align-items-center title flex-wrap">
+                                        <script>
+                                            showWord('男', 'ㄋㄢ', 'ˊ')
+                                            showWord('生', 'ㄕㄥ', '')
+                                        </script>
+                                    </div>
+                                </legend>
                             </label>
                         </div>
-                        <div class="form-check ">
-                            <input type="radio" name="sex" id="girl" value="女性" onchange="changePage(1)" required>
-                            <label class="form-check-label ml-1" for="girl">
-                                <div class="d-flex align-items-center">
-                                    <script>
-                                        showWord('女', 'ㄋㄩ', 'ˇ')
-                                        showWord('生', 'ㄕㄥ', '')
-                                    </script>
-                                </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sex" id="girl" value="女性" required>
+                            <label class="form-check-label" for="girl">
+                                <legend class="col-form-label">
+                                    <div class="d-flex align-items-center title flex-wrap">
+                                        <script>
+                                            showWord('女', 'ㄋㄩ', 'ˇ')
+                                            showWord('生', 'ㄕㄥ', '')
+                                        </script>
+                                    </div>
+                                </legend>
                             </label>
                         </div>
-                    </fieldset>
+                    </div>
                 </div>
-               
+                <div class="form-group d-flex">
+                    <label for="staticEmail" class="col-form-label d-flex">
+                        <legend class="col-form-label">
+                            <div class="d-flex align-items-center title flex-wrap">
+                                2.
+                                <script>
+                                    showWord('年', 'ㄋㄧㄢ', 'ˊ')
+                                    showWord('齡', 'ㄌㄧㄥ', 'ˊ')
+                                </script>
+                                :
+                            </div>
+                        </legend>
+                    </label>
+                    <div class="col-sm-10 d-flex align-items-center">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sex" id="boy" value="男性" required>
+                            <label class="form-check-label" for="boy">
+                                <legend class="col-form-label">
+                                    <div class="d-flex align-items-center title flex-wrap">
+                                        7~12
+                                        &nbsp;
+                                        <script>
+                                            showWord('歲', 'ㄙㄨㄟ', 'ˋ')
+                                        </script>
+                                    </div>
+                                </legend>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sex" id="girl" value="女性" required>
+                            <label class="form-check-label" for="girl">
+                                <legend class="col-form-label">
+                                    <div class="d-flex align-items-center title flex-wrap">
+                                        13~18
+                                        &nbsp;
+                                        <script>
+                                            showWord('歲', 'ㄙㄨㄟ', 'ˋ')
+                                        </script>
+                                    </div>
+                                </legend>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
