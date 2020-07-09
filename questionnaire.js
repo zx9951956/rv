@@ -1,8 +1,9 @@
-var btnUp = document.getElementById('button-up')
-var btnDown = document.getElementById('button-down')
+var btnLeft = document.getElementById('button-left')
+var btnRight = document.getElementById('button-right')
 var progressBar = document.getElementById('progressBar')
-var now = 0
-var fill = 0
+var degreeOfCompletion = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+var nowPage = 1
+
 $('#submit').on('click', function () {
     var state = 0
     // 性別
@@ -27,8 +28,8 @@ $('#submit').on('click', function () {
         }
         return temp;
     };
-     //居住地
-     var place = function () {
+    //居住地
+    var place = function () {
         var temp;
         $('[name="place"]').each(function () {
             if ($(this).prop('checked') === true) temp = $(this).val();
@@ -52,20 +53,18 @@ $('#submit').on('click', function () {
     var exhibitionHall = function () {
         var temp;
         $('[name="exhibitionHall"]').each(function (i) {
-                if ($(this).prop('checked') === true){
-                    if(i ==0 ){
+            if ($(this).prop('checked') === true) {
+                if (i == 0) {
+                    temp = $(this).val();
+                } else {
+                    if (temp == null) {
                         temp = $(this).val();
-                    }
-                    else{
-                        if(temp == null){
-                            temp = $(this).val();
-                        }
-                        else{
-                            temp += (',' +  $(this).val());
-                        }
+                    } else {
+                        temp += (',' + $(this).val());
                     }
                 }
-            
+            }
+
         });
         if (temp == null) {
             state = 1
@@ -94,8 +93,8 @@ $('#submit').on('click', function () {
         }
         return temp;
     };
-     //是否分享
-     var share = function () {
+    //是否分享
+    var share = function () {
         var temp;
         $('[name="share"]').each(function () {
             if ($(this).prop('checked') === true) temp = $(this).val();
@@ -105,8 +104,8 @@ $('#submit').on('click', function () {
         }
         return temp;
     };
-     //是否有趣
-     var interesting = function () {
+    //是否有趣
+    var interesting = function () {
         var temp;
         $('[name="interesting"]').each(function () {
             if ($(this).prop('checked') === true) temp = $(this).val();
@@ -128,15 +127,15 @@ $('#submit').on('click', function () {
     var data = {
         'entry.678731899': sex(),
         'entry.985182338': year(),
-        'entry.299271935':place(),
-        'entry.1801503054':time(),
-        'entry.1739358294':exhibitionHall(),
-        'entry.509556683':come(),
-        'entry.377136009':understand(),
-        'entry.859527971':share(),
-        'entry.1560278706':interesting(),
-        'entry.1950067070':suggest()
-        
+        'entry.299271935': place(),
+        'entry.1801503054': time(),
+        'entry.1739358294': exhibitionHall(),
+        'entry.509556683': come(),
+        'entry.377136009': understand(),
+        'entry.859527971': share(),
+        'entry.1560278706': interesting(),
+        'entry.1950067070': suggest()
+
     };
 
     if (state == 0) {
@@ -150,76 +149,99 @@ $('#submit').on('click', function () {
                 alert('資料已送出！');
             }
         });
-    }
-    else{
+    } else {
         console.log('test')
     }
 
 });
 
 $(document).ready(function () {
-    btnUp.disabled = true
-    btnDown.disabled = true
-
+    btnLeft.disabled = true
+    btnRight.disabled = true
+    SetProgressBar()
+    for(i=0 ; i<11 ;i++){
+        $(".problem:nth-child(" + (i+1) + ")").css({
+            "transform": "translateX("+(100*i)+"vw)",
+            "transition": "all 0.5s"
+        })
+    }
 });
 
-var changePage = function (i) {
-
-    if (i < 5) {
-        $('body,html').animate({
-            scrollTop: $('#question-' + i).offset().top // Scroll to top of body
-        }, 500);
+var GetDegreeOfCompletion = function () {
+    var temp = 0;
+    for (i = 0; i < degreeOfCompletion.length; i++) {
+        temp += degreeOfCompletion[i]
     }
-    else{
-        $('body,html').animate({
-            scrollTop: $('#finished').offset().top // Scroll to top of body
-        }, 500);
-    }
-    if(now==fill){
-        fill++
-    }
-    now++
-    
-    btnDisabled(now)
-
-    progressBar.style.width = fill * 20 + "%"
+    return temp
 }
-$('#button-up').on('click', function () {
-    now--
-    btnDisabled(now)
-    $('body,html').animate({
-        scrollTop: $('#question-' + now).offset().top // Scroll to top of body
-    }, 500);
+
+var SetProgressBar = function () {
+    progressBar.style.width = GetDegreeOfCompletion() * 10 + "%"
+}
+var changePage = function (index) {
+    var temp=0
+    if (degreeOfCompletion[index-1] == 0) {
+        nowPage++
+        degreeOfCompletion[index-1] = 1
+        btnDisabled(nowPage)
+        SetProgressBar()
+        for(i=0 ; i<11 ;i++){
+            temp=i+1
+            $(".problem:nth-child(" + temp + ")").css({
+                "transform": "translateX("+(100*temp-100*nowPage)+"vw)",
+                "transition": "all 0.5s"
+            })
+        }
+    }
+}
+$('#button-left').on('click', function () {
+    nowPage--
+    btnDisabled(nowPage)
+    var temp=0
+    for(i=0 ; i<11 ;i++){
+        temp=i+1
+        $(".problem:nth-child(" + temp + ")").css({
+            "transform": "translateX("+(100*temp-100*nowPage)+"vw)",
+            "transition": "all 0.5s"
+        })
+    }
 });
 
-$('#button-down').on('click', function () {
-    now++
-    btnDisabled(now)
-    if (now < 5) {
-        $('body,html').animate({
-            scrollTop: $('#question-' + now).offset().top // Scroll to top of body
-        }, 500);
-    }
-    else{
-        $('body,html').animate({
-            scrollTop: $('#finished').offset().top // Scroll to top of body
-        }, 500);
+$('#button-right').on('click', function () {
+    nowPage++
+    btnDisabled(nowPage)
+    var temp=0
+    for(i=0 ; i<11 ;i++){
+        temp=i+1
+        $(".problem:nth-child(" + temp + ")").css({
+            "transform": "translateX("+(100*temp-100*nowPage)+"vw)",
+            "transition": "all 0.5s"
+        })
     }
 });
 var btnDisabled = function (now) {
-    if (now == 0 ) {
-        btnUp.disabled = true
-        btnDown.disabled = false
+    if(now==1){
+        btnLeft.disabled = true
+        if(degreeOfCompletion[now-1] == 1 || now == GetDegreeOfCompletion()){
+            btnRight.disabled = false
+        }
+        else{
+            btnRight.disabled = true
+        }
+    }
+    else{
+        if(degreeOfCompletion[now-2] == 1){
+            btnLeft.disabled = false
+        }
+        if(degreeOfCompletion[now] == 1 || now == GetDegreeOfCompletion()){
+            btnRight.disabled = false
+        }
+        else{
+            btnRight.disabled = true
+        }
+    }
     
-    } 
-    else if(now<fill){
-        btnDown.disabled = false
-    }
-    else if(now==fill){
-        btnUp.disabled =false
-        btnDown.disabled = true
-    }
-    else {
-        btnUp.disabled = false
-    }
+
+    
+    
 }
