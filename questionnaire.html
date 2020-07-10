@@ -41,12 +41,13 @@
             </legend>
             <div class="d-flex " style="height: 80%;">
                 <div class=" px-5 w-100">
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-sex rounded-pill">
                         <input class="form-check-input" type="radio" name="sex" id="boy" value="男性"
-                            onchange="chooseAnswer(1)" required>
+                            onchange="chooseAnswer(1)" onclick="changeColor('sex')" required>
                         <label class="form-check-label w-100" for="boy">
                             <legend class="col-form-label">
-                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap ">
                                     <script>
                                         showWord('男', 'ㄋㄢ', 'ˊ')
                                         showWord('生', 'ㄕㄥ', '')
@@ -55,9 +56,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-sex rounded-pill">
                         <input class="form-check-input" type="radio" name="sex" id="girl" value="女性"
-                            onchange="chooseAnswer(1)" required>
+                            onchange="chooseAnswer(1)" onclick="changeColor('sex')" required>
                         <label class="form-check-label w-100" for="girl">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -87,9 +89,10 @@
             </legend>
             <div class="d-flex " style="height: 80%;">
                 <div class=" px-5 w-100">
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-year rounded-pill">
                         <input class="form-check-input" type="radio" name="year" id="year1" value="7~12歲"
-                            onchange="chooseAnswer(2)" required>
+                            onchange="chooseAnswer(2)" onclick="changeColor('year')" required>
                         <label class="form-check-label w-100" for="year1">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -102,9 +105,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-year rounded-pill">
                         <input class="form-check-input" type="radio" name="year" id="year2" value="13~18歲"
-                            onchange="chooseAnswer(2)" required>
+                            onchange="chooseAnswer(2)" onclick="changeColor('year')" required>
                         <label class="form-check-label w-100" for="year2">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -131,14 +135,14 @@
                         showWord('住', 'ㄓㄨ', 'ˋ')
                         showWord('地', 'ㄉㄧ', 'ˋ')
                     </script>
-                    :
                 </div>
             </legend>
             <div class="d-flex " style="height: 80%;">
                 <div class=" px-5 w-100">
-                        <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-place rounded-pill">
                         <input class="form-check-input" type="radio" name="place" id="place1" value="台北市"
-                            onchange="chooseAnswer(3)" required>
+                            onchange="chooseAnswer(3)" onclick="changeColor('place')" required>
                         <label class="form-check-label w-100" for="place1">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -151,9 +155,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-place rounded-pill">
                         <input class="form-check-input" type="radio" name="place" id="place2" value="新北市"
-                            onchange="chooseAnswer(3)" required>
+                            onchange="chooseAnswer(3)" onclick="changeColor('place')" required>
                         <label class="form-check-label w-100" for="place2">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -166,9 +171,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-place rounded-pill">
                         <input class="form-check-input" type="radio" name="place" id="place3" value="桃園市"
-                            onchange="chooseAnswer(3)" required>
+                            onchange="chooseAnswer(3)" onclick="changeColor('place')" required>
                         <label class="form-check-label w-100" for="place3">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -181,9 +187,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-place rounded-pill">
                         <input class="form-check-input" type="radio" name="place" id="place4" value="新竹市"
-                            onchange="chooseAnswer(3)" required>
+                            onchange="chooseAnswer(3)" onclick="changeColor('place')" required>
                         <label class="form-check-label w-100" for="place4">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -196,9 +203,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-place rounded-pill">
                         <input class="form-check-input" type="radio" name="place" id="place_other" value="其他"
-                            onchange="chooseAnswer(3)" required>
+                            onchange="chooseAnswer(3)" onclick="changeColor('place')" required>
                         <label class="form-check-label w-100" for="place_other">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -253,9 +261,10 @@
             </legend>
             <div class="d-flex " style="height: 80%;">
                 <div class=" px-5 w-100">
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-time rounded-pill">
                         <input class="form-check-input" type="radio" name="time" id="time1" value="第一次"
-                            onchange="chooseAnswer(4)" required>
+                            onchange="chooseAnswer(4)" onclick="changeColor('time')" required>
                         <label class="form-check-label w-100" for="time1">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -268,9 +277,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-time rounded-pill">
                         <input class="form-check-input" type="radio" name="time" id="time2" value="第二次"
-                            onchange="chooseAnswer(4)" required>
+                            onchange="chooseAnswer(4)" onclick="changeColor('time')" required>
                         <label class="form-check-label w-100" for="time2">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -283,9 +293,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-time rounded-pill">
                         <input class="form-check-input" type="radio" name="time" id="time3" value="第三次"
-                            onchange="chooseAnswer(4)" required>
+                            onchange="chooseAnswer(4)" onclick="changeColor('time')" required>
                         <label class="form-check-label w-100" for="time3">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -298,9 +309,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-time rounded-pill">
                         <input class="form-check-input" type="radio" name="time" id="time4" value="第四次"
-                            onchange="chooseAnswer(4)" required>
+                            onchange="chooseAnswer(4)" onclick="changeColor('time')" required>
                         <label class="form-check-label w-100" for="time4">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -313,9 +325,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-time rounded-pill">
                         <input class="form-check-input" type="radio" name="time" id="time5" value="第五次"
-                            onchange="chooseAnswer(4)" required>
+                            onchange="chooseAnswer(4)" onclick="changeColor('time')" required>
                         <label class="form-check-label w-100" for="time5">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -328,9 +341,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-time rounded-pill">
                         <input class="form-check-input" type="radio" name="time" id="time_other" value="其他"
-                            onchange="chooseAnswer(4)" required>
+                            onchange="chooseAnswer(4)" onclick="changeColor('time')" required>
                         <label class="form-check-label w-100" for="time_other">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -386,9 +400,10 @@
             </legend>
             <div class="d-flex " style="height: 80%;">
                 <div class=" px-5 w-100">
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-exhibitionHall rounded-pill">
                         <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall1"
-                            value="綠色方舟" onchange="chooseCheckBox(5)">
+                            value="綠色方舟" onchange="chooseCheckBox(5)" onclick="changeColor('exhibitionHall')">  
                         <label class="form-check-label w-100" for="exhibitionHall1">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -402,9 +417,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-exhibitionHall rounded-pill">
                         <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall2"
-                            value="客家茶苑" onchange="chooseCheckBox(5)">
+                            value="客家茶苑" onchange="chooseCheckBox(5)" onclick="changeColor('exhibitionHall')">
                         <label class="form-check-label w-100" for="exhibitionHall2">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -418,9 +434,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-exhibitionHall rounded-pill">
                         <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall3"
-                            value="草本堂" onchange="chooseCheckBox(5)">
+                            value="草本堂" onchange="chooseCheckBox(5)" onclick="changeColor('exhibitionHall')">
                         <label class="form-check-label w-100" for="exhibitionHall3">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -433,9 +450,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-exhibitionHall rounded-pill">
                         <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall4"
-                            value="鼓勵好室" onchange="chooseCheckBox(5)">
+                            value="鼓勵好室" onchange="chooseCheckBox(5)" onclick="changeColor('exhibitionHall')">
                         <label class="form-check-label w-100" for="exhibitionHall4">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -449,9 +467,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-exhibitionHall rounded-pill">
                         <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall5"
-                            value="四國文化" onchange="chooseCheckBox(5)">
+                            value="四國文化" onchange="chooseCheckBox(5)" onclick="changeColor('exhibitionHall')">
                         <label class="form-check-label w-100" for="exhibitionHall5">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -507,9 +526,10 @@
             </legend>
             <div class="d-flex " style="height: 80%;">
                 <div class=" px-5 w-100">
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-come rounded-pill">
                         <input class="form-check-input" type="radio" name="come" id="come1" value="非常願意"
-                            onchange="chooseAnswer(6)" required>
+                            onchange="chooseAnswer(6)" onclick="changeColor('come')" required>
                         <label class="form-check-label w-100" for="come1">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -523,9 +543,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-come rounded-pill">
                         <input class="form-check-input" type="radio" name="come" id="come2" value="願意"
-                            onchange="chooseAnswer(6)" required>
+                            onchange="chooseAnswer(6)" onclick="changeColor('come')" required>
                         <label class="form-check-label w-100" for="come2">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -537,9 +558,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-come rounded-pill">
                         <input class="form-check-input" type="radio" name="come" id="come3" value="普通"
-                            onchange="chooseAnswer(6)" required>
+                            onchange="chooseAnswer(6)" onclick="changeColor('come')" required>
                         <label class="form-check-label w-100" for="come3">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -551,9 +573,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-come rounded-pill">
                         <input class="form-check-input" type="radio" name="come" id="come4" value="不太願意"
-                            onchange="chooseAnswer(6)" required>
+                            onchange="chooseAnswer(6)" onclick="changeColor('come')" required>
                         <label class="form-check-label w-100" for="come4">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -567,9 +590,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-come rounded-pill">
                         <input class="form-check-input" type="radio" name="come" id="come5" value="完全不願意"
-                            onchange="chooseAnswer(6)" required>
+                            onchange="chooseAnswer(6)" onclick="changeColor('come')" required>
                         <label class="form-check-label w-100" for="come5">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -626,9 +650,10 @@
             </legend>
             <div class="d-flex " style="height: 80%;">
                 <div class=" px-5 w-100">
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-understand rounded-pill">
                         <input class="form-check-input" type="radio" name="understand" id="understand1" value="有點聽懂"
-                            onchange="chooseAnswer(7)" required>
+                            onchange="chooseAnswer(7)" onclick="changeColor('understand')" required>
                         <label class="form-check-label w-100" for="understand1">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -642,9 +667,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-understand rounded-pill">
                         <input class="form-check-input" type="radio" name="understand" id="understand2" value="有點聽不懂"
-                            onchange="chooseAnswer(7)" required>
+                            onchange="chooseAnswer(7)" onclick="changeColor('understand')" required>
                         <label class="form-check-label w-100" for="understand2">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -659,9 +685,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-understand rounded-pill">
                         <input class="form-check-input" type="radio" name="understand" id="understand3" value="完全聽不懂"
-                            onchange="chooseAnswer(7)" required>
+                            onchange="chooseAnswer(7)" onclick="changeColor('understand')" required>
                         <label class="form-check-label w-100" for="understand3">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -676,9 +703,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-understand rounded-pill">
                         <input class="form-check-input" type="radio" name="understand" id="understand4" value="沒有聽過導覽"
-                            onchange="chooseAnswer(7)" required>
+                            onchange="chooseAnswer(7)" onclick="changeColor('understand')" required>
                         <label class="form-check-label w-100" for="understand4">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -737,9 +765,10 @@
             </legend>
             <div class="d-flex " style="height: 80%;">
                 <div class=" px-5 w-100">
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-share rounded-pill">
                         <input class="form-check-input" type="radio" name="share" id="share1" value="願意"
-                            onchange="chooseAnswer(8)" required>
+                            onchange="chooseAnswer(8)" onclick="changeColor('share')" required>
                         <label class="form-check-label w-100" for="share1">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -752,9 +781,10 @@
                         </label>
                     </div>
 
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-share rounded-pill">
                         <input class="form-check-input" type="radio" name="share" id="share2" value="不願意"
-                            onchange="chooseAnswer(8)" required>
+                            onchange="chooseAnswer(8)" onclick="changeColor('share')" required>
                         <label class="form-check-label w-100" for="share2">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -768,9 +798,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-share rounded-pill">
                         <input class="form-check-input" type="radio" name="share" id="share3" value="沒意見"
-                            onchange="chooseAnswer(8)" required>
+                            onchange="chooseAnswer(8)" onclick="changeColor('share')" required>
                         <label class="form-check-label w-100" for="share3">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -819,9 +850,10 @@
             </legend>
             <div class="d-flex " style="height: 80%;">
                 <div class=" px-5 w-100">
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
-                        <input class="form-check-input" type="radio" name="interesting" id="interesting1" value="有趣" onchange="chooseAnswer(9)"
-                            required>
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-interesting rounded-pill">
+                        <input class="form-check-input" type="radio" name="interesting" id="interesting1" value="有趣"
+                            onchange="chooseAnswer(9)" onclick="changeColor('interesting')" required>
                         <label class="form-check-label w-100" for="interesting1">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -834,9 +866,10 @@
                         </label>
                     </div>
 
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
-                        <input class="form-check-input" type="radio" name="interesting" id="interesting2" value="無趣" onchange="chooseAnswer(9)"
-                            required>
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-interesting rounded-pill">
+                        <input class="form-check-input" type="radio" name="interesting" id="interesting2" value="無趣"
+                            onchange="chooseAnswer(9)" onclick="changeColor('interesting')" required>
                         <label class="form-check-label w-100" for="interesting2">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -848,9 +881,10 @@
                             </legend>
                         </label>
                     </div>
-                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
-                        <input class="form-check-input" type="radio" name="interesting" id="interesting3" value="沒意見" onchange="chooseAnswer(9)"
-                            required>
+                    <div
+                        class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word problem-interesting rounded-pill">
+                        <input class="form-check-input" type="radio" name="interesting" id="interesting3" value="沒意見"
+                            onchange="chooseAnswer(9)" onclick="changeColor('interesting')" required>
                         <label class="form-check-label w-100" for="interesting3">
                             <legend class="col-form-label">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
@@ -890,24 +924,62 @@
                 </div>
             </legend>
             <div class="d-flex " style="height: 80%;">
-                    <div class=" px-5 w-100">
-                        <div class="form-check d-flex justify-content-center py-2 mb-4">
-                                <input class="form-control" type="text" name="suggest" id="suggest" value="" autocomplete="off" onchange="getStr(10,this.id)" required>
-                        </div>
+                <div class=" px-5 w-100">
+                    <div class="form-check d-flex justify-content-center py-2 mb-4">
+                        <textarea rows="10" class="form-control" type="text" name="suggest" id="suggest" value=""
+                            autocomplete="off" onchange="getStr(10,this.id)" required> </textarea>
                     </div>
                 </div>
-            
-
+            </div>
         </div>
-        <div id="finished" class="problem d-flex align-items-center ">
-            <button id="submit" type="submit" class="btn btn-primary col-sm-12 d-flex justify-content-center"  >
-                <div class="d-flex align-items-center">
-                    <script>
-                        showWord('送', 'ㄙㄨㄥ', 'ˋ')
-                        showWord('出', 'ㄔㄨ', '')
-                    </script>
-                </div>
-            </button>
+        <div id="finished" class="problem d-flex align-items-center justify-content-center">
+            <div>
+                <legend class="col-form-label">
+                    <div class="d-flex align-items-center justify-content-center flex-wrap">
+                        <script>
+                            showWord('問', 'ㄨㄣ', 'ˋ')
+                            showWord('卷', 'ㄐㄩㄢ', 'ˋ')
+                            showWord('結', 'ㄐㄧㄝ', 'ˊ')
+                            showWord('束', 'ㄕㄨ', 'ˋ')
+                            showWord('囉', '˙ㄌㄨㄛ', '')
+                        </script>
+                        !
+                    </div>
+                </legend>
+                <legend class="mb-3 col-form-label">
+                    <div class="d-flex align-items-center justify-content-center flex-wrap">
+                        <script>
+                            showWord('非', 'ㄈㄟ', '')
+                            showWord('常', 'ㄔㄤ', 'ˊ')
+                            showWord('謝', 'ㄒㄧㄝ', 'ˋ')
+                            showWord('謝', 'ㄒㄧㄝ', 'ˋ')
+                            showWord('你', 'ㄋㄧ', 'ˇ')
+                        </script>
+                        （
+                        &nbsp;
+                        <script>
+                            showWord('妳', 'ㄋㄧ', 'ˇ')
+                        </script>
+                        ）
+                        <script>
+                            showWord('的', '˙ㄉㄜ', '')
+                            showWord('回', 'ㄏㄨㄟ', 'ˊ')
+                            showWord('答', 'ㄉㄚ', 'ˊ')
+                        </script>
+                        。
+                    </div>
+                </legend>
+
+                <button id="submit" type="submit" class="px-5 rounded-pill btn col-sm-12 d-flex justify-content-center"
+                    style="background: #01cad8;color:#fff">
+                    <div class="d-flex align-items-center">
+                        <script>
+                            showWord('送', 'ㄙㄨㄥ', 'ˋ')
+                            showWord('出', 'ㄔㄨ', '')
+                        </script>
+                    </div>
+                </button>
+            </div>
         </div>
 
     </form>

@@ -167,7 +167,37 @@ $(document).ready(function () {
         })
     }
 });
+var changeColor = function (type) {
+    var tempI;
+    $('[name="'+type+'"]').each(function (i) {
+        if ($(this).prop('checked') === true) tempI = i;
+    });
 
+    var temp = document.getElementsByClassName('problem-'+ type)
+    
+    if(type == 'exhibitionHall'){
+        $('[name="'+type+'"]').each(function (i) {
+            if ($(this).prop('checked') === true) {
+                temp[i].style.background ="#c3fff0"
+            }
+            else{
+                temp[i].style.background ="rgb(233, 255, 250)"
+                
+            }
+        });
+       
+    }
+    else{
+        for(var j = 0; j<temp.length;j++){
+            if(j == tempI){
+                temp[j].style.background ="#c3fff0"
+            }
+            else{
+                temp[j].style.background ="rgb(233, 255, 250)"
+            }
+        }
+    }
+}
 var GetDegreeOfCompletion = function () {
     var temp = 0;
     for (i = 0; i < degreeOfCompletion.length; i++) {

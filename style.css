@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
   max-height: 100vh;
   height: 100vh;
+  color: #4b4748;
 }
 
 span {
@@ -37,31 +38,46 @@ span {
   font-weight: 700;
 }
 
+
+
 .title .diao {
   font-size: 12px;
   -webkit-transform: scale(.75);
 }
 
 .problem-word,
-.problem-word .word{
+.problem-word .word {
   font-size: 32px;
   font-weight: 700;
 }
 
-.problem-word .diao,.item-word .diao {
+.problem-word .diao,
+.item-word .diao {
   font-size: 12px;
   -webkit-transform: scale(1);
 }
 
 
-.item-word,
-.item-word .word{
-  background: rgb(220, 255, 246);
+.problem-sex,
+.problem-year,
+.problem-place,
+.problem-time,
+.problem-exhibitionHall,
+.problem-come,
+.problem-understand,
+.problem-share,
+.problem-interesting,
+.problem-suggest {
+  background: rgb(233, 255, 250);
+}
+
+.item-word .word {
   font-size: 28px;
   font-weight: 700;
 }
 
-.item-word .yin,.problem-word .yin{
+.item-word .yin,
+.problem-word .yin {
   writing-mode: vertical-lr;
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: vertical-lr;
@@ -93,11 +109,11 @@ span {
 
 
 input[type="radio"] {
-  opacity: 0; 
+  opacity: 0;
 }
 
 input[type="checkbox"] {
-  opacity: 0; 
+  opacity: 0;
 }
 
 .problem {
@@ -147,9 +163,11 @@ input[type="checkbox"] {
 .problem:nth-child(10) {
   z-index: 2;
 }
+
 .problem:nth-child(11) {
   z-index: 1;
 }
+
 .previous {
   animation-fill-mode: forwards;
   animation-name: previous;

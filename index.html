@@ -4,7 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=0" />
+    <meta name="viewport"
+        content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=0" />
     <link rel="canonical" href="https://letswrite.tw/custom-google-form/">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -22,10 +23,10 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
-<body>
-    <div class="container d-flex">
+<body style="background: #d3fcff;">
+    <div class="container d-flex align-items-center h-100">
         <div class="col-lg-12">
-            <legend class="col-form-label">
+            <legend class="col-form-label mb-3">
                 <div class="d-flex align-items-center title justify-content-center">
                     <script>
                         showWord('親', 'ㄑㄧㄣ', '')
@@ -39,7 +40,7 @@
                     </script>
                 </div>
             </legend>
-            <legend class="col-form-label">
+            <legend class="col-form-label mb-3">
                 <div class="d-flex align-items-center title flex-wrap padding-5">
                     <script>
                         showWord('非', 'ㄈㄟ', '')
@@ -51,7 +52,7 @@
                     <div class="word">
                         （&nbsp;
                     </div>
-                    
+
                     <script>
                         showWord('妳', 'ㄋㄧ', 'ˇ')
                     </script>
@@ -191,7 +192,7 @@
 
                 </div>
             </legend>
-            <legend class="col-form-label">
+            <legend class="col-form-label mb-3">
                 <div class="d-flex align-items-center title flex-wrap justify-content-center">
                     <script>
                         showWord('桃', 'ㄊㄠ', 'ˊ')
@@ -210,15 +211,30 @@
                 </div>
             </legend>
 
+            <div class="d-flex align-items-center justify-content-center">
+                <form action="questionnaire.html">
+                    <button id="start" type="submit"
+                        class="px-5 rounded-pill btn  col-sm-12 d-flex justify-content-center"
+                        style="background: #01cad8;color:#fff">
+                        <span>
+                            <div class="d-flex align-items-center title flex-wrap justify-content-center">
+                                <script>
+                                    showWord('開', 'ㄎㄞ', '')
+                                    showWord('使', 'ㄕ', 'ˇ')
+                                    showWord('填', 'ㄊㄧㄢ', 'ˊ')
+                                    showWord('寫', 'ㄒㄧㄝ', 'ˇ')
+                                </script>
+                            </div>
+                        </span>
+                    </button>
+                </form>
+            </div>
+
         </div>
 
-       
+
     </div>
-    <form action="questionnaire.html">
-            <button id="start" type="submit" class="btn btn-primary col-sm-12 d-flex justify-content-center" >
-                <span>開始填寫</span>
-            </button>
-        </form>
+
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -231,8 +247,6 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-    <script type="text/javascript" src="questionnaire.js"></script>
 
 </body>
 
