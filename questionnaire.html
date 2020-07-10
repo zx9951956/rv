@@ -899,7 +899,16 @@
             
 
         </div>
-        
+        <div id="finished" class="problem d-flex align-items-center ">
+            <button id="submit" type="submit" class="btn btn-primary col-sm-12 d-flex justify-content-center" onkeypress="if (window.event.keyCode==13) return false;">
+                <div class="d-flex align-items-center">
+                    <script>
+                        showWord('送', 'ㄙㄨㄥ', 'ˋ')
+                        showWord('出', 'ㄔㄨ', '')
+                    </script>
+                </div>
+            </button>
+        </div>
 
     </form>
     <div id="compelete-bar" class="position-fixed p-3 d-flex align-items-center" style="bottom: 0;right:0">
