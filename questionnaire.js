@@ -4,6 +4,16 @@ var submit = document.getElementById('submit')
 var progressBar = document.getElementById('progressBar')
 var degreeOfCompletion = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 var nowPage = 1
+
+$('.input').keypress(function(e) {
+    code = e.keyCode ? e.keyCode : e.which; // in case of browser compatibility
+    if(code == 13) {
+        e.preventDefault();
+        // do something
+        /* also can use return false; instead. */
+        }
+    });
+    
 $('#submit').on('click', function () {
     var state = 0
     // 性別
