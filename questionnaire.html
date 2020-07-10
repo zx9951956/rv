@@ -29,96 +29,101 @@
     <form>
         <!-- 第一題 -->
         <div class="problem">
-            <legend class="col-form-label">
-                <div class="d-flex align-items-center title flex-wrap">
+            <legend class="col-form-label d-flex align-items-center" style="height: 20%;">
+                <div class="px-5 d-flex align-items-center problem-word flex-wrap">
                     1.
                     &nbsp;
                     <script>
                         showWord('性', 'ㄒㄧㄥ', 'ˋ')
                         showWord('別', 'ㄅㄧㄝ', 'ˊ')
                     </script>
-                    :
                 </div>
             </legend>
-            <div class="px-2 d-flex align-items-center">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="sex" id="boy" value="男性" onchange="changePage(1)"
-                        required>
-                    <label class="form-check-label" for="boy">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('男', 'ㄋㄢ', 'ˊ')
-                                    showWord('生', 'ㄕㄥ', '')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="sex" id="girl" value="女性" onchange="changePage(1)"
-                        required>
-                    <label class="form-check-label" for="girl">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('女', 'ㄋㄩ', 'ˇ')
-                                    showWord('生', 'ㄕㄥ', '')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
+            <div class="d-flex " style="height: 80%;">
+                <div class=" px-5 w-100">
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="sex" id="boy" value="男性"
+                            onchange="chooseAnswer(1)" required>
+                        <label class="form-check-label w-100" for="boy">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('男', 'ㄋㄢ', 'ˊ')
+                                        showWord('生', 'ㄕㄥ', '')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="sex" id="girl" value="女性"
+                            onchange="chooseAnswer(1)" required>
+                        <label class="form-check-label w-100" for="girl">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('女', 'ㄋㄩ', 'ˇ')
+                                        showWord('生', 'ㄕㄥ', '')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
                 </div>
             </div>
+
         </div>
         <!-- 第二題 -->
         <div class="problem">
-            <legend class=" col-form-label">
-                <div class="d-flex align-items-center title flex-wrap">
+            <legend class="col-form-label d-flex align-items-center" style="height: 20%;">
+                <div class="px-5 d-flex align-items-center problem-word flex-wrap">
                     2.
                     &nbsp;
                     <script>
                         showWord('年', 'ㄋㄧㄢ', 'ˊ')
                         showWord('齡', 'ㄌㄧㄥ', 'ˊ')
                     </script>
-                    :
                 </div>
             </legend>
-            <div class="px-2 d-flex align-items-center">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="year" id="year1" value="7~12歲" onchange="changePage(2)" required>
-                    <label class="form-check-label" for="year1">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                7~12
-                                &nbsp;
-                                <script>
-                                    showWord('歲', 'ㄙㄨㄟ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="year" id="year2" value="13~18歲" onchange="changePage(2)" required>
-                    <label class="form-check-label" for="year2">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                13~18
-                                &nbsp;
-                                <script>
-                                    showWord('歲', 'ㄙㄨㄟ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
+            <div class="d-flex " style="height: 80%;">
+                <div class=" px-5 w-100">
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="year" id="year1" value="7~12歲"
+                            onchange="chooseAnswer(2)" required>
+                        <label class="form-check-label w-100" for="year1">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    7~12
+                                    &nbsp;
+                                    <script>
+                                        showWord('歲', 'ㄙㄨㄟ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="year" id="year2" value="13~18歲"
+                            onchange="chooseAnswer(2)" required>
+                        <label class="form-check-label w-100" for="year2">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    13~18
+                                    &nbsp;
+                                    <script>
+                                        showWord('歲', 'ㄙㄨㄟ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- 第三題 -->
         <div class="problem">
-            <legend class=" col-form-label">
-                <div class="d-flex align-items-center title flex-wrap">
+            <legend class="col-form-label d-flex align-items-center" style="height: 20%;">
+                <div class="px-5 d-flex align-items-center problem-word flex-wrap">
                     3.
                     &nbsp;
                     <script>
@@ -129,82 +134,89 @@
                     :
                 </div>
             </legend>
-            <div class="px-2 d-flex align-items-center">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="place" id="place1" value="台北市" onchange="changePage(3)" required>
-                    <label class="form-check-label" for="place1">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('台', 'ㄊㄞ', 'ˊ')
-                                    showWord('北', 'ㄅㄟ', 'ˇ')
-                                    showWord('市', 'ㄕ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="place" id="place2" value="新北市" onchange="changePage(3)" required>
-                    <label class="form-check-label" for="place2">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('新', 'ㄒㄧㄣ', '')
-                                    showWord('北', 'ㄅㄟ', 'ˇ')
-                                    showWord('市', 'ㄕ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="place" id="place3" value="桃園市" onchange="changePage(3)" required>
-                    <label class="form-check-label" for="place3">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('桃', 'ㄊㄠ', 'ˊ')
-                                    showWord('園', 'ㄩㄢ', 'ˊ')
-                                    showWord('市', 'ㄕ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="place" id="place4" value="新竹市" onchange="changePage(3)" required>
-                    <label class="form-check-label" for="place4">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('新', 'ㄒㄧㄣ', '')
-                                    showWord('竹', 'ㄓㄨ', 'ˊ')
-                                    showWord('市', 'ㄕ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="place" id="place_other" value="其他" onchange="changePage(3)" required>
-                    <label class="form-check-label" for="place_other">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('其', 'ㄑㄧ', 'ˊ')
-                                    showWord('他', 'ㄊㄚ', '')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
+            <div class="d-flex " style="height: 80%;">
+                <div class=" px-5 w-100">
+                        <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="place" id="place1" value="台北市"
+                            onchange="chooseAnswer(3)" required>
+                        <label class="form-check-label w-100" for="place1">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('台', 'ㄊㄞ', 'ˊ')
+                                        showWord('北', 'ㄅㄟ', 'ˇ')
+                                        showWord('市', 'ㄕ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="place" id="place2" value="新北市"
+                            onchange="chooseAnswer(3)" required>
+                        <label class="form-check-label w-100" for="place2">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('新', 'ㄒㄧㄣ', '')
+                                        showWord('北', 'ㄅㄟ', 'ˇ')
+                                        showWord('市', 'ㄕ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="place" id="place3" value="桃園市"
+                            onchange="chooseAnswer(3)" required>
+                        <label class="form-check-label w-100" for="place3">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('桃', 'ㄊㄠ', 'ˊ')
+                                        showWord('園', 'ㄩㄢ', 'ˊ')
+                                        showWord('市', 'ㄕ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="place" id="place4" value="新竹市"
+                            onchange="chooseAnswer(3)" required>
+                        <label class="form-check-label w-100" for="place4">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('新', 'ㄒㄧㄣ', '')
+                                        showWord('竹', 'ㄓㄨ', 'ˊ')
+                                        showWord('市', 'ㄕ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="place" id="place_other" value="其他"
+                            onchange="chooseAnswer(3)" required>
+                        <label class="form-check-label w-100" for="place_other">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('其', 'ㄑㄧ', 'ˊ')
+                                        showWord('他', 'ㄊㄚ', '')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- 第四題 -->
         <div class="problem">
-            <legend class="col-form-label">
-                <div class="d-flex align-items-center title flex-wrap">
+            <legend class="col-form-label d-flex align-items-center" style="height: 20%;">
+                <div class="px-5 d-flex align-items-center problem-word flex-wrap">
                     4.
                     &nbsp;
                     <script>
@@ -239,96 +251,104 @@
                     ?
                 </div>
             </legend>
-            <div class="px-2 d-flex align-items-center">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="time" id="time1" value="第一次" onchange="changePage(4)" required>
-                    <label class="form-check-label" for="time1">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('第', 'ㄉㄧ', 'ˋ')
-                                    showWord('一', 'ㄧ', '')
-                                    showWord('次', 'ㄘ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="time" id="time2" value="第二次" onchange="changePage(4)" required>
-                    <label class="form-check-label" for="time2">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('第', 'ㄉㄧ', 'ˋ')
-                                    showWord('二', 'ㄦ', 'ˋ')
-                                    showWord('次', 'ㄘ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="time" id="time3" value="第三次" onchange="changePage(4)" required>
-                    <label class="form-check-label" for="time3">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('第', 'ㄉㄧ', 'ˋ')
-                                    showWord('三', 'ㄙㄢ', '')
-                                    showWord('次', 'ㄘ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="time" id="time4" value="第四次" onchange="changePage(4)" required>
-                    <label class="form-check-label" for="time4">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('第', 'ㄉㄧ', 'ˋ')
-                                    showWord('四', 'ㄙ', 'ˋ')
-                                    showWord('次', 'ㄘ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="time" id="time5" value="第五次" onchange="changePage(4)" required>
-                    <label class="form-check-label" for="time5">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('第', 'ㄉㄧ', 'ˋ')
-                                    showWord('五', 'ㄨ', 'ˇ')
-                                    showWord('次', 'ㄘ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="time" id="time_other" value="其他" onchange="changePage(4)" required>
-                    <label class="form-check-label" for="time_other">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('其', 'ㄑㄧ', 'ˊ')
-                                    showWord('他', 'ㄊㄚ', '')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
+            <div class="d-flex " style="height: 80%;">
+                <div class=" px-5 w-100">
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="time" id="time1" value="第一次"
+                            onchange="chooseAnswer(4)" required>
+                        <label class="form-check-label w-100" for="time1">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('第', 'ㄉㄧ', 'ˋ')
+                                        showWord('一', 'ㄧ', '')
+                                        showWord('次', 'ㄘ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="time" id="time2" value="第二次"
+                            onchange="chooseAnswer(4)" required>
+                        <label class="form-check-label w-100" for="time2">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('第', 'ㄉㄧ', 'ˋ')
+                                        showWord('二', 'ㄦ', 'ˋ')
+                                        showWord('次', 'ㄘ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="time" id="time3" value="第三次"
+                            onchange="chooseAnswer(4)" required>
+                        <label class="form-check-label w-100" for="time3">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('第', 'ㄉㄧ', 'ˋ')
+                                        showWord('三', 'ㄙㄢ', '')
+                                        showWord('次', 'ㄘ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="time" id="time4" value="第四次"
+                            onchange="chooseAnswer(4)" required>
+                        <label class="form-check-label w-100" for="time4">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('第', 'ㄉㄧ', 'ˋ')
+                                        showWord('四', 'ㄙ', 'ˋ')
+                                        showWord('次', 'ㄘ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="time" id="time5" value="第五次"
+                            onchange="chooseAnswer(4)" required>
+                        <label class="form-check-label w-100" for="time5">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('第', 'ㄉㄧ', 'ˋ')
+                                        showWord('五', 'ㄨ', 'ˇ')
+                                        showWord('次', 'ㄘ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="time" id="time_other" value="其他"
+                            onchange="chooseAnswer(4)" required>
+                        <label class="form-check-label w-100" for="time_other">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('其', 'ㄑㄧ', 'ˊ')
+                                        showWord('他', 'ㄊㄚ', '')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- 第五題 -->
         <div class="problem">
-            <legend class="col-form-label">
-                <div class="d-flex align-items-center title flex-wrap">
+            <legend class="col-form-label d-flex align-items-center" style="height: 20%;">
+                <div class="px-5 d-flex align-items-center problem-word flex-wrap">
                     5.
                     &nbsp;
                     <script>
@@ -364,92 +384,94 @@
                     ?
                 </div>
             </legend>
-            <div class="px-2 d-flex align-items-center flex-wrap">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall1"
-                        value="綠色方舟" onchange="changePage(5)"> 
-                    <label class="form-check-label" for="exhibitionHall1">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('綠', 'ㄌㄩ', 'ˋ')
-                                    showWord('色', 'ㄙㄜ', 'ˋ')
-                                    showWord('方', 'ㄈㄤ', '')
-                                    showWord('舟', 'ㄓㄡ', '')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall2"
-                        value="客家茶苑" onchange="changePage(5)">
-                    <label class="form-check-label" for="exhibitionHall2">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('客', 'ㄎㄜ', 'ˋ')
-                                    showWord('家', 'ㄐㄧㄚ', '')
-                                    showWord('茶', 'ㄔㄚ', 'ˊ')
-                                    showWord('苑', 'ㄩㄢ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall3"
-                        value="草本堂" onchange="changePage(5)">
-                    <label class="form-check-label" for="exhibitionHall3">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('草', 'ㄘㄠ', 'ˇ')
-                                    showWord('本', 'ㄅㄣ', 'ˇ')
-                                    showWord('堂', 'ㄊㄤ', 'ˊ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall4"
-                        value="鼓勵好室" onchange="changePage(5)">
-                    <label class="form-check-label" for="exhibitionHall4">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('鼓', 'ㄍㄨ', 'ˇ')
-                                    showWord('勵', 'ㄌㄧ', 'ˋ')
-                                    showWord('好', 'ㄏㄠ', 'ˇ')
-                                    showWord('室', 'ㄕ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall5"
-                        value="四國文化" onchange="changePage(5)">
-                    <label class="form-check-label" for="exhibitionHall5">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('四', 'ㄙ', 'ˋ')
-                                    showWord('國', 'ㄍㄨㄛ', 'ˊ')
-                                    showWord('文', 'ㄨㄣ', 'ˊ')
-                                    showWord('化', 'ㄏㄨㄚ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
+            <div class="d-flex " style="height: 80%;">
+                <div class=" px-5 w-100">
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall1"
+                            value="綠色方舟" onchange="chooseCheckBox(5)">
+                        <label class="form-check-label w-100" for="exhibitionHall1">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('綠', 'ㄌㄩ', 'ˋ')
+                                        showWord('色', 'ㄙㄜ', 'ˋ')
+                                        showWord('方', 'ㄈㄤ', '')
+                                        showWord('舟', 'ㄓㄡ', '')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall2"
+                            value="客家茶苑" onchange="chooseCheckBox(5)">
+                        <label class="form-check-label w-100" for="exhibitionHall2">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('客', 'ㄎㄜ', 'ˋ')
+                                        showWord('家', 'ㄐㄧㄚ', '')
+                                        showWord('茶', 'ㄔㄚ', 'ˊ')
+                                        showWord('苑', 'ㄩㄢ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall3"
+                            value="草本堂" onchange="chooseCheckBox(5)">
+                        <label class="form-check-label w-100" for="exhibitionHall3">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('草', 'ㄘㄠ', 'ˇ')
+                                        showWord('本', 'ㄅㄣ', 'ˇ')
+                                        showWord('堂', 'ㄊㄤ', 'ˊ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall4"
+                            value="鼓勵好室" onchange="chooseCheckBox(5)">
+                        <label class="form-check-label w-100" for="exhibitionHall4">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('鼓', 'ㄍㄨ', 'ˇ')
+                                        showWord('勵', 'ㄌㄧ', 'ˋ')
+                                        showWord('好', 'ㄏㄠ', 'ˇ')
+                                        showWord('室', 'ㄕ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="checkbox" name="exhibitionHall" id="exhibitionHall5"
+                            value="四國文化" onchange="chooseCheckBox(5)">
+                        <label class="form-check-label w-100" for="exhibitionHall5">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('四', 'ㄙ', 'ˋ')
+                                        showWord('國', 'ㄍㄨㄛ', 'ˊ')
+                                        showWord('文', 'ㄨㄣ', 'ˊ')
+                                        showWord('化', 'ㄏㄨㄚ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- 第六題 -->
         <div class="problem">
-            <legend class="col-form-label">
-                <div class="d-flex align-items-center title flex-wrap">
+            <legend class="col-form-label d-flex align-items-center" style="height: 20%;">
+                <div class="px-5 d-flex align-items-center problem-word flex-wrap">
                     6.
                     &nbsp;
                     <script>
@@ -483,87 +505,92 @@
                     ?
                 </div>
             </legend>
-            <div class="px-2 d-flex align-items-center flex-wrap">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="come" id="come1" value="非常願意" onchange="changePage(6)" required>
-                    <label class="form-check-label" for="come1">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('非', 'ㄈㄟ', '')
-                                    showWord('常', 'ㄔㄤ', 'ˊ')
-                                    showWord('願', 'ㄩㄢ', 'ˋ')
-                                    showWord('意', 'ㄧ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
+            <div class="d-flex " style="height: 80%;">
+                <div class=" px-5 w-100">
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="come" id="come1" value="非常願意"
+                            onchange="chooseAnswer(6)" required>
+                        <label class="form-check-label w-100" for="come1">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('非', 'ㄈㄟ', '')
+                                        showWord('常', 'ㄔㄤ', 'ˊ')
+                                        showWord('願', 'ㄩㄢ', 'ˋ')
+                                        showWord('意', 'ㄧ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="come" id="come2" value="願意"
+                            onchange="chooseAnswer(6)" required>
+                        <label class="form-check-label w-100" for="come2">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('願', 'ㄩㄢ', 'ˋ')
+                                        showWord('意', 'ㄧ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="come" id="come3" value="普通"
+                            onchange="chooseAnswer(6)" required>
+                        <label class="form-check-label w-100" for="come3">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('普', 'ㄆㄨ', 'ˇ')
+                                        showWord('通', 'ㄊㄨㄥ', '')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="come" id="come4" value="不太願意"
+                            onchange="chooseAnswer(6)" required>
+                        <label class="form-check-label w-100" for="come4">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('不', 'ㄅㄨ', 'ˊ')
+                                        showWord('太', 'ㄊㄞ', 'ˋ')
+                                        showWord('願', 'ㄩㄢ', 'ˋ')
+                                        showWord('意', 'ㄧ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="come" id="come5" value="完全不願意"
+                            onchange="chooseAnswer(6)" required>
+                        <label class="form-check-label w-100" for="come5">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('完', 'ㄨㄢ', 'ˊ')
+                                        showWord('全', 'ㄑㄩㄢ', 'ˊ')
+                                        showWord('不', 'ㄅㄨ', 'ˊ')
+                                        showWord('願', 'ㄩㄢ', 'ˋ')
+                                        showWord('意', 'ㄧ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="come" id="come2" value="願意" onchange="changePage(6)" required>
-                    <label class="form-check-label" for="come2">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('願', 'ㄩㄢ', 'ˋ')
-                                    showWord('意', 'ㄧ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="come" id="come3" value="普通" onchange="changePage(6)" required>
-                    <label class="form-check-label" for="come3">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('普', 'ㄆㄨ', 'ˇ')
-                                    showWord('通', 'ㄊㄨㄥ', '')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="come" id="come4" value="不太願意" onchange="changePage(6)" required>
-                    <label class="form-check-label" for="come4">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('不', 'ㄅㄨ', 'ˊ')
-                                    showWord('太', 'ㄊㄞ', 'ˋ')
-                                    showWord('願', 'ㄩㄢ', 'ˋ')
-                                    showWord('意', 'ㄧ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="come" id="come5" value="完全不願意" onchange="changePage(6)" required>
-                    <label class="form-check-label" for="come5">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('完', 'ㄨㄢ', 'ˊ')
-                                    showWord('全', 'ㄑㄩㄢ', 'ˊ')
-                                    showWord('不', 'ㄅㄨ', 'ˊ')
-                                    showWord('願', 'ㄩㄢ', 'ˋ')
-                                    showWord('意', 'ㄧ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-
-
             </div>
         </div>
         <!-- 第七題 -->
         <div class="problem">
-            <legend class="col-form-label">
-                <div class="d-flex align-items-center title flex-wrap">
+            <legend class="col-form-label d-flex align-items-center" style="height: 20%;">
+                <div class="px-5 d-flex align-items-center problem-word flex-wrap">
                     7.
                     &nbsp;
                     <script>
@@ -597,84 +624,83 @@
                     ?
                 </div>
             </legend>
-            <div class="px-2 d-flex align-items-center flex-wrap">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="understand" id="understand1" value="有點聽懂" onchange="changePage(7)"
-                        required>
-                    <label class="form-check-label" for="understand1">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('有', 'ㄧㄡ', 'ˇ')
-                                    showWord('點', 'ㄉㄧㄢ', 'ˇ')
-                                    showWord('聽', 'ㄊㄧㄥ', '')
-                                    showWord('懂', 'ㄉㄨㄥ', 'ˇ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
+            <div class="d-flex " style="height: 80%;">
+                <div class=" px-5 w-100">
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="understand" id="understand1" value="有點聽懂"
+                            onchange="chooseAnswer(7)" required>
+                        <label class="form-check-label w-100" for="understand1">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('有', 'ㄧㄡ', 'ˇ')
+                                        showWord('點', 'ㄉㄧㄢ', 'ˇ')
+                                        showWord('聽', 'ㄊㄧㄥ', '')
+                                        showWord('懂', 'ㄉㄨㄥ', 'ˇ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="understand" id="understand2" value="有點聽不懂"
+                            onchange="chooseAnswer(7)" required>
+                        <label class="form-check-label w-100" for="understand2">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('有', 'ㄧㄡ', 'ˇ')
+                                        showWord('點', 'ㄉㄧㄢ', 'ˇ')
+                                        showWord('聽', 'ㄊㄧㄥ', '')
+                                        showWord('不', 'ㄅㄨ', 'ˋ')
+                                        showWord('懂', 'ㄉㄨㄥ', 'ˇ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="understand" id="understand3" value="完全聽不懂"
+                            onchange="chooseAnswer(7)" required>
+                        <label class="form-check-label w-100" for="understand3">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('完', 'ㄧㄡ', 'ˇ')
+                                        showWord('全', 'ㄉㄧㄢ', 'ˇ')
+                                        showWord('聽', 'ㄊㄧㄥ', '')
+                                        showWord('不', 'ㄅㄨ', 'ˋ')
+                                        showWord('懂', 'ㄉㄨㄥ', 'ˇ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="understand" id="understand4" value="沒有聽過導覽"
+                            onchange="chooseAnswer(7)" required>
+                        <label class="form-check-label w-100" for="understand4">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('沒', 'ㄇㄟ', 'ˊ')
+                                        showWord('有', 'ㄧㄡ', 'ˇ')
+                                        showWord('聽', 'ㄊㄧㄥ', '')
+                                        showWord('過', 'ㄍㄨㄛ', 'ˋ')
+                                        showWord('導', 'ㄉㄠ', 'ˇ')
+                                        showWord('覽', 'ㄌㄢ', 'ˇ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="understand" id="understand2" value="有點聽不懂" onchange="changePage(7)"
-                        required>
-                    <label class="form-check-label" for="understand2">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('有', 'ㄧㄡ', 'ˇ')
-                                    showWord('點', 'ㄉㄧㄢ', 'ˇ')
-                                    showWord('聽', 'ㄊㄧㄥ', '')
-                                    showWord('不', 'ㄅㄨ', 'ˋ')
-                                    showWord('懂', 'ㄉㄨㄥ', 'ˇ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="understand" id="understand3" value="完全聽不懂" onchange="changePage(7)"
-                        required>
-                    <label class="form-check-label" for="understand3">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('完', 'ㄧㄡ', 'ˇ')
-                                    showWord('全', 'ㄉㄧㄢ', 'ˇ')
-                                    showWord('聽', 'ㄊㄧㄥ', '')
-                                    showWord('不', 'ㄅㄨ', 'ˋ')
-                                    showWord('懂', 'ㄉㄨㄥ', 'ˇ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="understand" id="understand4" value="沒有聽過導覽" onchange="changePage(7)"
-                        required>
-                    <label class="form-check-label" for="understand4">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('沒', 'ㄇㄟ', 'ˊ')
-                                    showWord('有', 'ㄧㄡ', 'ˇ')
-                                    showWord('聽', 'ㄊㄧㄥ', '')
-                                    showWord('過', 'ㄍㄨㄛ', 'ˋ')
-                                    showWord('導', 'ㄉㄠ', 'ˇ')
-                                    showWord('覽', 'ㄌㄢ', 'ˇ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-
-
             </div>
         </div>
         <!-- 第八題 -->
         <div class="problem">
-
-            <legend class="col-form-label">
-                <div class="d-flex align-items-center title flex-wrap">
+            <legend class="col-form-label d-flex align-items-center" style="height: 20%;">
+                <div class="px-5 d-flex align-items-center problem-word flex-wrap">
                     8.
                     &nbsp;
                     <script>
@@ -709,58 +735,61 @@
                     ?
                 </div>
             </legend>
-            <div class="px-2 d-flex align-items-center flex-wrap">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="share" id="share1" value="願意" onchange="changePage(8)" required>
-                    <label class="form-check-label" for="share1">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('願', 'ㄩㄢ', 'ˋ')
-                                    showWord('意', 'ㄧ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
+            <div class="d-flex " style="height: 80%;">
+                <div class=" px-5 w-100">
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="share" id="share1" value="願意"
+                            onchange="chooseAnswer(8)" required>
+                        <label class="form-check-label w-100" for="share1">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('願', 'ㄩㄢ', 'ˋ')
+                                        showWord('意', 'ㄧ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="share" id="share2" value="不願意"
+                            onchange="chooseAnswer(8)" required>
+                        <label class="form-check-label w-100" for="share2">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('不', 'ㄅㄨ', 'ˊ')
+
+                                        showWord('願', 'ㄩㄢ', 'ˋ')
+                                        showWord('意', 'ㄧ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="share" id="share3" value="沒意見"
+                            onchange="chooseAnswer(8)" required>
+                        <label class="form-check-label w-100" for="share3">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('沒', 'ㄇㄟ', 'ˊ')
+                                        showWord('意', 'ㄧ', 'ˋ')
+                                        showWord('見', 'ㄐㄧㄢ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
                 </div>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="share" id="share2" value="不願意" onchange="changePage(8)" required>
-                    <label class="form-check-label" for="share2">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('不', 'ㄅㄨ', 'ˊ')
-
-                                    showWord('願', 'ㄩㄢ', 'ˋ')
-                                    showWord('意', 'ㄧ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="share" id="share3" value="沒意見" onchange="changePage(8)" required>
-                    <label class="form-check-label" for="share3">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('沒', 'ㄇㄟ', 'ˊ')
-                                    showWord('意', 'ㄧ', 'ˋ')
-                                    showWord('見', 'ㄐㄧㄢ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-
-
             </div>
         </div>
         <!-- 第九題 -->
         <div class="problem">
-            <legend class="col-form-label">
-                <div class="d-flex align-items-center title flex-wrap">
+            <legend class="col-form-label d-flex align-items-center" style="height: 20%;">
+                <div class="px-5 d-flex align-items-center problem-word flex-wrap">
                     9.
                     &nbsp;
                     <script>
@@ -788,59 +817,59 @@
                     ?
                 </div>
             </legend>
-            <div class="px-2 d-flex align-items-center flex-wrap">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="interesting" id="interesting1" value="有趣"
-                        required>
-                    <label class="form-check-label" for="interesting1">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('有', 'ㄧㄡ', 'ˇ')
-                                    showWord('趣', 'ㄑㄩ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
+            <div class="d-flex " style="height: 80%;">
+                <div class=" px-5 w-100">
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="interesting" id="interesting1" value="有趣" onchange="chooseAnswer(9)"
+                            required>
+                        <label class="form-check-label w-100" for="interesting1">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('有', 'ㄧㄡ', 'ˇ')
+                                        showWord('趣', 'ㄑㄩ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
 
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="interesting" id="interesting2" value="無趣"
-                        required>
-                    <label class="form-check-label" for="interesting2">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('無', 'ㄨ', 'ˊ')
-                                    showWord('趣', 'ㄑㄩ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="interesting" id="interesting2" value="無趣" onchange="chooseAnswer(9)"
+                            required>
+                        <label class="form-check-label w-100" for="interesting2">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('無', 'ㄨ', 'ˊ')
+                                        showWord('趣', 'ㄑㄩ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center px-5 py-2 mb-4 item-word">
+                        <input class="form-check-input" type="radio" name="interesting" id="interesting3" value="沒意見" onchange="chooseAnswer(9)"
+                            required>
+                        <label class="form-check-label w-100" for="interesting3">
+                            <legend class="col-form-label">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <script>
+                                        showWord('沒', 'ㄇㄟ', 'ˊ')
+                                        showWord('意', 'ㄧ', 'ˋ')
+                                        showWord('見', 'ㄐㄧㄢ', 'ˋ')
+                                    </script>
+                                </div>
+                            </legend>
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="interesting" id="interesting3" value="沒意見"
-                        required>
-                    <label class="form-check-label" for="interesting3">
-                        <legend class="col-form-label">
-                            <div class="d-flex align-items-center title flex-wrap">
-                                <script>
-                                    showWord('沒', 'ㄇㄟ', 'ˊ')
-                                    showWord('意', 'ㄧ', 'ˋ')
-                                    showWord('見', 'ㄐㄧㄢ', 'ˋ')
-                                </script>
-                            </div>
-                        </legend>
-                    </label>
-                </div>
-
-
             </div>
         </div>
         <!-- 第十題 -->
         <div class="problem">
-            <legend class="col-form-label">
-                <div class="d-flex align-items-center title flex-wrap">
+            <legend class="col-form-label d-flex align-items-center" style="height: 20%;">
+                <div class="px-5 d-flex align-items-center problem-word flex-wrap">
                     10.
                     &nbsp;
                     <script>
@@ -860,7 +889,14 @@
                     ?
                 </div>
             </legend>
-            <input class="form-control" type="text" name="suggest" id="suggest" value="" autocomplete="off" required>
+            <div class="d-flex " style="height: 80%;">
+                    <div class=" px-5 w-100">
+                        <div class="form-check d-flex justify-content-center py-2 mb-4">
+                                <input class="form-control" type="text" name="suggest" id="suggest" value="" autocomplete="off" onchange="getStr(10,this.id)" required>
+                        </div>
+                    </div>
+                </div>
+            
 
         </div>
         <div id="finished" class="problem d-flex align-items-center ">
@@ -882,7 +918,8 @@
         </div>
         <div class="btn-group ml-2" role="group" aria-label="Basic example">
             <button id="button-left" type="button" class="btn btn-secondary"><i class="fas fa-angle-left"></i></button>
-            <button id="button-right" type="button" class="btn btn-secondary"><i class='fas fa-angle-right'></i></button>
+            <button id="button-right" type="button" class="btn btn-secondary"><i
+                    class='fas fa-angle-right'></i></button>
         </div>
     </div>
 

@@ -1,5 +1,6 @@
 var btnLeft = document.getElementById('button-left')
 var btnRight = document.getElementById('button-right')
+var submit = document.getElementById('submit')
 var progressBar = document.getElementById('progressBar')
 var degreeOfCompletion = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 var nowPage = 1
@@ -156,6 +157,7 @@ $('#submit').on('click', function () {
 });
 
 $(document).ready(function () {
+    submit.disabled = true
     btnLeft.disabled = true
     btnRight.disabled = true
     SetProgressBar()
@@ -178,46 +180,71 @@ var GetDegreeOfCompletion = function () {
 var SetProgressBar = function () {
     progressBar.style.width = GetDegreeOfCompletion() * 10 + "%"
 }
-var changePage = function (index) {
+var chooseAnswer = function (index) {
     var temp=0
     if (degreeOfCompletion[index-1] == 0) {
         nowPage++
         degreeOfCompletion[index-1] = 1
         btnDisabled(nowPage)
         SetProgressBar()
-        for(i=0 ; i<11 ;i++){
-            temp=i+1
-            $(".problem:nth-child(" + temp + ")").css({
-                "transform": "translateX("+(100*temp-100*nowPage)+"vw)",
-                "transition": "all 0.5s"
-            })
+        setTimeout("changePage()",750)
+        
+    }
+}
+var getStr = function (index,id) {
+    var str = document.getElementById(id).value
+
+    if (degreeOfCompletion[index-1] == 0 && str != "") {
+        nowPage++
+        degreeOfCompletion[index-1] = 1
+        btnDisabled(nowPage)
+        SetProgressBar()
+        setTimeout("changePage()",750)
+    }
+}
+var chooseCheckBox = function (index) {
+    var temp = 0
+    $('[name="exhibitionHall"]').each(function (i) {
+        if ($(this).prop('checked') === true) {
+            temp ++
         }
+    });
+    if (degreeOfCompletion[index-1] == 0) {
+        degreeOfCompletion[index-1] = 1
+        btnDisabled(nowPage)
+        SetProgressBar()
+    }
+    else if(temp == 0){
+        degreeOfCompletion[index-1] = 0
+        btnRight.disabled = true
+        SetProgressBar()
+    }
+}
+
+var changePage = function(){
+    for(i=0 ; i<11 ;i++){
+        temp=i+1
+        $(".problem:nth-child(" + temp + ")").css({
+            "transform": "translateX("+(100*temp-100*nowPage)+"vw)",
+            "transition": "all 0.5s"
+        })
+    }
+    if(nowPage == 11){
+        submit.disabled = false
     }
 }
 $('#button-left').on('click', function () {
     nowPage--
     btnDisabled(nowPage)
     var temp=0
-    for(i=0 ; i<11 ;i++){
-        temp=i+1
-        $(".problem:nth-child(" + temp + ")").css({
-            "transform": "translateX("+(100*temp-100*nowPage)+"vw)",
-            "transition": "all 0.5s"
-        })
-    }
+    setTimeout("changePage()",0)
 });
 
 $('#button-right').on('click', function () {
     nowPage++
     btnDisabled(nowPage)
     var temp=0
-    for(i=0 ; i<11 ;i++){
-        temp=i+1
-        $(".problem:nth-child(" + temp + ")").css({
-            "transform": "translateX("+(100*temp-100*nowPage)+"vw)",
-            "transition": "all 0.5s"
-        })
-    }
+    setTimeout("changePage()",0)
 });
 var btnDisabled = function (now) {
     if(now==1){
@@ -228,6 +255,9 @@ var btnDisabled = function (now) {
         else{
             btnRight.disabled = true
         }
+    }
+    else if(now ==11){
+        btnRight.disabled = true
     }
     else{
         if(degreeOfCompletion[now-2] == 1){
