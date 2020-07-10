@@ -176,10 +176,6 @@ var GetDegreeOfCompletion = function () {
     return temp
 }
 
-var submitTest = function () {
-    return false
-}
-
 var SetProgressBar = function () {
     progressBar.style.width = GetDegreeOfCompletion() * 10 + "%"
 }
@@ -232,7 +228,7 @@ var changePage = function () {
         })
     }
     if (nowPage == 11) {
-        submit.disabled = false
+        // submit.disabled = false
     }
 }
 $('#button-left').on('click', function () {
