@@ -228,7 +228,7 @@ var changePage = function () {
         })
     }
     if (nowPage == 11) {
-        // submit.disabled = false
+        submit.disabled = false
     }
 }
 $('#button-left').on('click', function () {
@@ -264,8 +264,4 @@ var btnDisabled = function (now) {
             btnRight.disabled = true
         }
     }
-
-
-
-
 }
