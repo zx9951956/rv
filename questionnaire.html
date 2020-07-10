@@ -26,7 +26,7 @@
 <body>
 
 
-    <form onsubmit="return false">
+    <form >
         <!-- 第一題 -->
         <div class="problem">
             <legend class="col-form-label d-flex align-items-center" style="height: 20%;">
@@ -900,7 +900,7 @@
 
         </div>
         <div id="finished" class="problem d-flex align-items-center ">
-            <button id="submit" type="submit" class="btn btn-primary col-sm-12 d-flex justify-content-center" onkeypress="if (window.event.keyCode==13) return false;">
+            <button id="submit" type="submit" class="btn btn-primary col-sm-12 d-flex justify-content-center"  onkeypress="if (window.event.keyCode==13 ||window.event.keyCode==9) return false;">
                 <div class="d-flex align-items-center">
                     <script>
                         showWord('送', 'ㄙㄨㄥ', 'ˋ')
