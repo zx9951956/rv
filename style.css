@@ -103,8 +103,8 @@ span {
     font-weight: 700;
     -webkit-transform: scale(.8);
   } */
-  body {
-    -webkit-transform: scale(.7);
+  .index-body {
+    -webkit-transform: scale(.75);
   }
   .padding-5 {
     padding: 0;
