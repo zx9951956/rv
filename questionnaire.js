@@ -247,6 +247,12 @@ var chooseCheckBox = function (index) {
         btnRight.disabled = true
         SetProgressBar()
     }
+    if(temp != 0){
+        document.getElementById('next').style.display = "flex"
+    }
+    else{
+        document.getElementById('next').style.display = "none"
+    }
 }
 
 var changePage = function () {
@@ -269,6 +275,12 @@ $('#button-left').on('click', function () {
 });
 
 $('#button-right').on('click', function () {
+    nowPage++
+    btnDisabled(nowPage)
+    var temp = 0
+    setTimeout("changePage()", 0)
+});
+$('#button-next').on('click', function () {
     nowPage++
     btnDisabled(nowPage)
     var temp = 0

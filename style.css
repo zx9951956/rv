@@ -87,22 +87,54 @@ span {
   -webkit-transform: scale(.75);
   letter-spacing: -1px;
 }
+#next{
+  display: none;
+}
 
 .padding-5 {
   padding: 0 3rem;
 }
 
 @media screen and (max-width: 460px) {
-
+  /* 
   .title,
   .title .word {
     font-size: 16px;
     font-weight: 700;
     -webkit-transform: scale(.8);
-  }
+  } */
 
   .padding-5 {
     padding: 0;
+  }
+
+  .item-word .word {
+    font-size: 12px;
+    font-weight: 700;
+    -webkit-transform: scale(.8);
+
+  }
+
+  .item-word .yin {
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    white-space: nowrap;
+    font-size: 12px;
+    -webkit-text-size-adjust: none;
+    -webkit-transform: scale(.5);
+    letter-spacing: -1px;
+  }
+
+  .problem-word,
+  .problem-word .word {
+    font-size: 14px;
+    font-weight: 700;
+
+  }
+  .item-sm{
+    -webkit-transform: scale(.8);
+
   }
 }
 
@@ -188,6 +220,8 @@ input[type="checkbox"] {
   width: 50%;
   z-index: 12;
 }
+
+
 
 @media screen and (max-width: 720px) {
   #compelete-bar {
