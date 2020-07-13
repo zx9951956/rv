@@ -146,13 +146,14 @@ $('#submit').on('click', function () {
             contentType: 'application/json',
             dataType: 'jsonp',
             complete: function () {
-                alert('資料已送出！');
+                window.location.assign('./final.html')
             }
         });
     } else {
         console.log('test')
     }
-
+    
+    
 });
 
 $(document).ready(function () {
