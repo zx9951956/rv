@@ -117,7 +117,8 @@ span {
 
   }
 
-  .item-word .yin {
+  .item-word .yin,
+  .problem-word .yin {
     writing-mode: vertical-lr;
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: vertical-lr;
