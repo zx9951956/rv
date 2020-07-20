@@ -212,13 +212,24 @@ var SetProgressBar = function () {
 }
 var chooseAnswer = function (index) {
     var temp = 0
-    if (degreeOfCompletion[index - 1] == 0) {
-        nowPage++
+    if(index == 10 && degreeOfCompletion[index - 2] == 0){
+        nowPage += 2
+        degreeOfCompletion[index - 2] = 1
         degreeOfCompletion[index - 1] = 1
-        btnDisabled(nowPage)
-        SetProgressBar()
-        setTimeout("changePage()", 750)
 
+            btnDisabled(nowPage)
+            SetProgressBar()
+            setTimeout("changePage()", 750)
+    }
+    else{
+        if (degreeOfCompletion[index - 1] == 0) {
+            nowPage++
+            degreeOfCompletion[index - 1] = 1
+            btnDisabled(nowPage)
+            SetProgressBar()
+            setTimeout("changePage()", 750)
+    
+        }
     }
 }
 var getStr = function (index, id) {
